@@ -522,6 +522,42 @@ img, picture, .p-media {
   width: 90%;
 }
 
+/* styles for back to top btn */
+#backToTopBtn{ 
+  display: inline-block;
+  background-color: #601010;
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s , opacity 0.5s , visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999999;
+}
+#backToTopBtn::after{
+  content: '\02C4'; 
+  font-size: 40px; 
+  line-height: 50px;
+  color: #fff;
+}
+#backToTopBtn:hover{
+  cursor: pointer;
+  background-color: #333;
+}
+#backToTopBtn:active{
+  background-color: #555;
+}
+.show{
+  opacity: 1;
+  visibility: visible;
+}
+
 /* ---------- Responsive breakpoints ---------- */
 
 @media (max-width: 1220px) {
