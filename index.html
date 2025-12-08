@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+
     <title>Rural Informative & Social Harmony Academy</title>
     <meta
       name="description"
       content="Inclusive education & skills for children with special needs. Volunteer | Donate | Support"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -18,32 +21,38 @@
           <img
             src="./assets/logos/Header_Logo.png"
             alt="RISHA Logo"
-            class="logo-single"
+            class="logo-single site-logo"
           />
-          <img src="./assets/logos/logo.png" alt="RISHA Logo" id="logo" />
+          <img
+            src="./assets/logos/logo.png"
+            alt="RISHA Logo"
+            id="logo"
+            class="site-logo"
+          />
         </div>
-        <nav id="mainNav" class="nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#programs">Programs</a>
-          <a href="#team">Team</a>
-          <a href="#contact" class="donate-btn">Contact</a>
+        <nav id="mainNav" class="nav nav-menu-bar">
+          <a class="navItem" href="#home">Home</a>
+          <a class="navItem" href="#about">About</a>
+          <a class="navItem" href="#programs">Programs</a>
+          <a class="navItem" href="#team">Team</a>
+          <a class="navItem" href="#contact" class="donate-btn">Contact</a>
         </nav>
 
         <div class="cta-wrap">
-          <a href="#volunteer" class="btn ghost">Volunteer</a>
-          <a href="#donate" class="btn" id="donate">Donate</a>
-          <a href="#volunteer">
+          <a href="#contactForm" class="btn navBtn ghost">Volunteer</a>
+          <a href="#donate" class="btn navBtn" id="donate">Donate</a>
+          <a href="#contactForm">
             <img
               src="./assets/icons/people.png"
               id="icon"
-              class="volunteer"
+              class="volunteer bounce"
               alt="people"
             />
           </a>
           <a href="#donate"
             ><img
               id="icon"
+              class="soft-pulse"
               src="./assets/icons/donateIcon.png"
               alt="donateIcom"
           /></a>
@@ -53,23 +62,25 @@
     </header>
 
     <!-- ======HERO====== -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" data-aos="fade-up">
       <div class="container hero-grid">
         <div class="hero-left">
-          <h1>Education, Skills & Dignity for Every Child with Disabilities</h1>
+          <h1 class="hero-title">
+            Education, Skills & Dignity for Every Child with Disabilities
+          </h1>
 
-          <p class="lead">
+          <p data-aos="fade-right" data-aos-delay="200" class="lead">
             We provide inclusive education and vocational training to children
             with special needs in rural areas — helping them become confident,
             independent and self-reliant.
           </p>
 
-          <div class="hero-ctas">
+          <div class="hero-ctas" data-aos="fade-up" data-aos-delay="300">
             <a class="btn big" href="#programs">View Programs</a>
             <a class="btn outline" href="#contact">Get Involved</a>
           </div>
 
-          <div class="stats">
+          <div class="stats" data-aos="zoom-in" data-aos-delay="400">
             <div class="stat">
               <div class="num">1200+</div>
               <div class="lbl">Children Supported</div>
@@ -87,7 +98,7 @@
           </div>
         </div>
 
-        <div class="hero-right">
+        <div class="hero-right gsap-reveal">
           <div class="hero-card">
             <img
               src="./assets/images/customImages/HeroImage.jpg"
@@ -111,6 +122,7 @@
 
     <!-- ====ABOUT===== -->
     <section id="about" class="section">
+      <h2 class="section-title">About Us</h2>
       <div class="container about-wrap">
         <div class="about-left">
           <h1>Rural Informative & Social Harmony Academy</h1>
@@ -334,7 +346,7 @@
     <section id="contact" class="section section-contact">
       <div class="container contact-grid">
         <div class="contact-form-wrap">
-          <h2>Contact / Volunteer</h2>
+          <h2 class="section-title">Contact / Volunteer</h2>
           <p>
             Interested to volunteer or support? Fill the form and we will reach
             out.
@@ -392,30 +404,31 @@
       </div>
     </footer>
 
-    <!-- back to top btn --> 
+    <!-- back to top btn -->
     <button id="backToTopBtn"></button>
+
+    <!-- animate library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      // back to top btn
-      const backToTopBtn = document.getElementById("backToTopBtn");
-      // backToTopBtn.classList.add('show');
-      
-      window.addEventListener("scroll", () => {
-        console.log('scrolling ..');
-        if (window.scrollY > 300) { 
-          backToTopBtn.classList.add("show");
-        } else {
-          backToTopBtn.classList.remove("show");
-        }
-      });
-      backToTopBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
+      AOS.init({
+        duration: 1200,
+        delay: 150,
+        easing: "ease-in-out", // smooth curve
+        offset: 120, // scroll trigger
+        once: true,
       });
     </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="./scripts/animationScripts.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>
