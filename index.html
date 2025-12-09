@@ -1,285 +1,434 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hi">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rural Informative & Social Harmony Academy</title>
-  <meta name="description" content="Inclusive education & skills for children with special needs. Volunteer | Donate | Support" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
+    <title>Rural Informative & Social Harmony Academy</title>
+    <meta
+      name="description"
+      content="Inclusive education & skills for children with special needs. Volunteer | Donate | Support"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- ======HEADER====== -->
-<header class="site-header">
-  <div class="container header-inner">
-    
-      <div class="brand">
-      <img src="Header_Logo.png" alt="RISHA Logo" class="logo-single">
-      </div>
-    <nav id="mainNav" class="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#programs">Programs</a>
-      <a href="#team">Team</a>
-      <a href="#contact" class="donate-btn">Contact</a>
-    </nav>
-    
-    <div class="cta-wrap">
-        <a href="#volunteer" class="btn ghost">Volunteer</a>
-        <a href="#donate" class="btn">Donate</a>
-        <button id="navToggle" class="hamburger" aria-label="menu">☰</button>
-      </div>
-    </div>
-  </header>
-
-  <!-- ======HERO====== -->
- <section id="home" class="hero">
-  <div class="container hero-grid">
-
-    <div class="hero-left">
-      <h1>Education, Skills & Dignity for Every Child with Disabilities</h1>
-
-      <p class="lead">
-        We provide inclusive education and vocational training to children with special needs in rural areas —
-        helping them become confident, independent and self-reliant.
-      </p>
-
-      <div class="hero-ctas">
-        <a class="btn big" href="#programs">View Programs</a>
-        <a class="btn outline" href="#contact">Get Involved</a>
-      </div>
-
-      <div class="stats">
-        <div class="stat">
-          <div class="num">1200+</div>
-          <div class="lbl">Children Supported</div>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ======HEADER====== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img
+            src="./assets/logos/Header_Logo.png"
+            alt="RISHA Logo"
+            class="logo-single site-logo"
+          />
+          <img
+            src="./assets/logos/logo.png"
+            alt="RISHA Logo"
+            id="logo"
+            class="site-logo"
+          />
         </div>
+        <nav id="mainNav" class="nav nav-menu-bar">
+          <a class="navItem" href="#home">Home</a>
+          <a class="navItem" href="#about">About</a>
+          <a class="navItem" href="#programs">Programs</a>
+          <a class="navItem" href="#team">Team</a>
+          <a class="navItem" href="#contact" class="donate-btn">Contact</a>
+        </nav>
 
-        <div class="stat">
-          <div class="num">45+</div>
-          <div class="lbl">Volunteers</div>
-        </div>
-
-        <div class="stat">
-          <div class="num">10+</div>
-          <div class="lbl">Villages Reached</div>
+        <div class="cta-wrap">
+          <a href="#contactForm" class="btn navBtn ghost">Volunteer</a>
+          <a href="#donate" class="btn navBtn" id="donate">Donate</a>
+          <a href="#contactForm">
+            <img
+              src="./assets/icons/people.png"
+              id="icon"
+              class="volunteer bounce"
+              alt="people"
+            />
+          </a>
+          <a href="#donate"
+            ><img
+              id="icon"
+              class="soft-pulse"
+              src="./assets/icons/donateIcon.png"
+              alt="donateIcom"
+          /></a>
+          <button id="navToggle" class="hamburger" aria-label="menu">☰</button>
         </div>
       </div>
-    </div>
+    </header>
 
+    <!-- ======HERO====== -->
+    <section id="home" class="hero" data-aos="fade-up">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title">
+            Education, Skills & Dignity for Every Child with Disabilities
+          </h1>
 
-      <div class="hero-right">
-        <div class="hero-card">
-          <img src="photo.jpg" alt="Education">
-          <div class="hero-card-body">
-            <h3>Join the mission</h3>
-            <p>Volunteer, donate or partner with us to bring sustainable change in rural communities.</p>
-            <div class="card-actions">
-              <a class="btn" href="#contact">Contact Us</a>
-              <a class="btn outline" href="#donate">Donate</a>
+          <p data-aos="fade-right" data-aos-delay="200" class="lead">
+            We provide inclusive education and vocational training to children
+            with special needs in rural areas — helping them become confident,
+            independent and self-reliant.
+          </p>
+
+          <div class="hero-ctas" data-aos="fade-up" data-aos-delay="300">
+            <a class="btn big" href="#programs">View Programs</a>
+            <a class="btn outline" href="#contact">Get Involved</a>
+          </div>
+
+          <div class="stats" data-aos="zoom-in" data-aos-delay="400">
+            <div class="stat">
+              <div class="num">1200+</div>
+              <div class="lbl">Children Supported</div>
+            </div>
+
+            <div class="stat">
+              <div class="num">45+</div>
+              <div class="lbl">Volunteers</div>
+            </div>
+
+            <div class="stat">
+              <div class="num">10+</div>
+              <div class="lbl">Villages Reached</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right gsap-reveal">
+          <div class="hero-card">
+            <img
+              src="./assets/images/customImages/HeroImage.jpg"
+              alt="Education"
+            />
+            <div class="hero-card-body">
+              <h3>Join the mission</h3>
+              <p>
+                Volunteer, donate or partner with us to bring sustainable change
+                in rural communities.
+              </p>
+              <div class="card-actions">
+                <a class="btn" href="#contact">Contact Us</a>
+                <a class="btn outline" href="#donate">Donate</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ====ABOUT===== -->
-  <section id="about" class="section">
-    <div class="container about-wrap">
-      <div class="about-left">
-        <h1> Rural Informative & Social Harmony Academy</h1>
-        <p>Our mission is to provide accessible and tailored education to children living with special needs. We work closely with teachers, families, and village communities to create a long-term positive impact.</p>
+    <!-- ====ABOUT===== -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Us</h2>
+      <div class="container about-wrap">
+        <div class="about-left">
+          <h1>Rural Informative & Social Harmony Academy</h1>
+          <p>
+            Our mission is to provide accessible and tailored education to
+            children living with special needs. We work closely with teachers,
+            families, and village communities to create a long-term positive
+            impact.
+          </p>
 
-        <ul class="bullets">
-          <li>Individualized learning plans</li>
-          <li>Vocational and livelihood training</li>
-          <li>Parent and community awareness programs</li>
-          <li>Regular health and development camps</li>
-        </ul>
+          <ul class="bullets">
+            <li>Individualized learning plans</li>
+            <li>Vocational and livelihood training</li>
+            <li>Parent and community awareness programs</li>
+            <li>Regular health and development camps</li>
+          </ul>
 
-        <div class="about-actions">
-          <a class="btn" href="#programs">Programs</a>
-          <a class="btn outline" href="#contact" target="_blank">Registration</a>
+          <div class="about-actions">
+            <a class="btn" href="#programs">Programs</a>
+            <a class="btn outline" href="#contact" target="_blank"
+              >Registration</a
+            >
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="glass-card">
+            <img
+              src="./assets/images/customImages/classroom.png"
+              alt="classroom"
+              class="hero-image abt-img"
+            />
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="about-right">
-        <div class="glass-card">
-          <img src="classroom.png" alt="classroom" class="hero-image">
+    <!-- ===== OUR PROGRAMS (6 cards) ===== -->
+    <section id="programs" class="section section-programs">
+      <div class="container">
+        <h2 class="section-title">Our Programs</h2>
+
+        <p class="section-lead">
+          We run tailored programs for children with special needs to build
+          skills, independence and community support.
+        </p>
+
+        <div class="programs-grid" role="list">
+          <!-- ====Card==== 1 -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p1-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo1.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p1-title">Inclusive Education</h3>
+              <p>
+                Specially designed classrooms and personalized learning plans
+                that help each child learn at their own pace.
+              </p>
+              <a class="p-link" href="#contact">Join</a>
+            </div>
+          </article>
+
+          <!-- =====Card===== 2 -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p2-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo2.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p2-title">Digital Learning</h3>
+              <p>
+                Basic computer and digital skills training to help children gain
+                confidence and future-ready abilities.
+              </p>
+              <a class="p-link" href="#contact">Learn More</a>
+            </div>
+          </article>
+
+          <!-- =====Card 3===== -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p3-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo3.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p3-title">Vocational Skills</h3>
+              <p>
+                Handicrafts, tailoring and other livelihood skills training to
+                build independence and income opportunities.
+              </p>
+              <a class="p-link" href="#contact">Get Involved</a>
+            </div>
+          </article>
+
+          <!-- =====Card 4===== -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p4-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo4.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p4-title">Creative Therapy</h3>
+              <p>
+                Art, music and play-based activities supporting emotional
+                development and self-expression.
+              </p>
+              <a class="p-link" href="#contact">Discover</a>
+            </div>
+          </article>
+
+          <!-- ======Card 5===== -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p5-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo5.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p5-title">Health & Camps</h3>
+              <p>
+                Regular health check-ups, therapy sessions and development
+                monitoring for well-being.
+              </p>
+              <a class="p-link" href="#contact">View Schedule</a>
+            </div>
+          </article>
+
+          <!-- =====Card 6===== -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p6-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo6.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p6-title">Parent & Community</h3>
+              <p>
+                Workshops and awareness sessions for parents and community
+                members to promote inclusion and rights.
+              </p>
+              <a class="p-link" href="#contact">Participate</a>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
-      
-            
+    </section>
 
-<!-- ===== OUR PROGRAMS (6 cards) ===== -->
-  <section id="programs" class="section section-programs">
-  <div class="container">
-    <h2 class="section-title">Our Programs</h2>
-
-    <p class="section-lead">We run tailored programs for children with special needs to build skills, independence and community support.</p>
-
-    <div class="programs-grid" role="list">
-
-      <!-- ====Card==== 1 -->
-      <article class="program-card" role="listitem" aria-labelledby="p1-title">
-        <div class="p-media" style="background-image:url('Program_Photo1.png');" aria-hidden="true"></div>
-        <div class="p-content">
-          <h3 id="p1-title">Inclusive Education</h3>
-          <p>Specially designed classrooms and personalized learning plans that help each child learn at their own pace.</p>
-          <a class="p-link" href="#contact">Join</a>
-        </div>
-      </article>
-
-      <!-- =====Card===== 2 -->
-      <article class="program-card" role="listitem" aria-labelledby="p2-title">
-        <div class="p-media" style="background-image:url('Program_Photo2.png');" aria-hidden="true"></div>
-        <div class="p-content">
-          <h3 id="p2-title">Digital Learning</h3>
-          <p>Basic computer and digital skills training to help children gain confidence and future-ready abilities.</p>
-          <a class="p-link" href="#contact">Learn More</a>
-        </div>
-      </article>
-
-      <!-- =====Card 3===== -->
-      <article class="program-card" role="listitem" aria-labelledby="p3-title">
-        <div class="p-media" style="background-image:url('Program_Photo3.png');" aria-hidden="true"></div>
-        <div class="p-content">
-          <h3 id="p3-title">Vocational Skills</h3>
-          <p>Handicrafts, tailoring and other livelihood skills training to build independence and income opportunities.</p>
-          <a class="p-link" href="#contact">Get Involved</a>
-        </div>
-      </article>
-
-      <!-- =====Card 4===== -->
-      <article class="program-card" role="listitem" aria-labelledby="p4-title">
-        <div class="p-media" style="background-image:url('Program_Photo4.png');" aria-hidden="true"></div>
-        <div class="p-content">
-          <h3 id="p4-title">Creative Therapy</h3>
-          <p>Art, music and play-based activities supporting emotional development and self-expression.</p>
-          <a class="p-link" href="#contact">Discover</a>
-        </div>
-      </article>
-
-      <!-- ======Card 5===== -->
-      <article class="program-card" role="listitem" aria-labelledby="p5-title">
-        <div class="p-media" style="background-image:url('Program_Photo5.png');" aria-hidden="true"></div>
-        <div class="p-content">
-          <h3 id="p5-title">Health & Camps</h3>
-          <p>Regular health check-ups, therapy sessions and development monitoring for well-being.</p>
-          <a class="p-link" href="#contact">View Schedule</a>
-        </div>
-      </article>
-
-      <!-- =====Card 6===== -->
-      <article class="program-card" role="listitem" aria-labelledby="p6-title">
-        <div class="p-media" style="background-image:url('Program_Photo6.png');" aria-hidden="true"></div>
-        <div class="p-content">
-          <h3 id="p6-title">Parent & Community</h3>
-          <p>Workshops and awareness sessions for parents and community members to promote inclusion and rights.</p>
-          <a class="p-link" href="#contact">Participate</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- =====TEAM===== -->
-  <section id="team" class="section">
-    <div class="container">
-      <h2 class="center">Our Team</h2>
-      <div class="team-grid">
-        <div class="team-card">
-          <img src="founder.jpg" alt="Risha Verma">
-          <h4>Risha Verma</h4>
-          <p class="role">Founder</p>
-        </div>
-
-        <div class="team-card">
-          <img src="" alt="team">
-          <h4>Program Lead</h4>
-          <p class="role">Teacher & Coordinator</p>
-        </div>
-
-        <div class="team-card">
-          <img src="" alt="team">
-          <h4>Volunteer Coordibator</h4>
-          <p class="role">Community Outreach</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =====CONTACT====== -->
-
-  <section id="contact" class="section section-contact">
-    <div class="container contact-grid">
-      <div class="contact-form-wrap">
-        <h2>Contact / Volunteer</h2>
-        <p>Interested to volunteer or support? Fill the form and we will reach out.</p>
-
-        <form id="contactForm" class="contact-form" novalidate>
-          <input id="vname" type="text" placeholder="Name" required>
-          <input id="vphone" type="tel" placeholder="Phone Number " required>
-          <input id="vemail" type="email" placeholder="Email" required>
-          <textarea id="vmsg"  type = "text" placeholder="Message" rows="5" required></textarea>
-
-          <div class="form-actions">
-            <button class="btn" type="submit">Send Message</button>
-            <a class="btn outline" href="#donate">Donate</a>
+    <!-- =====TEAM===== -->
+    <section id="team" class="section">
+      <div class="container">
+        <h2 class="center">Our Team</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <img
+              src="./assets/images/customImages/founder.jpg"
+              alt="Risha Verma"
+            />
+            <h4>Risha Verma</h4>
+            <p class="role">Founder</p>
           </div>
 
-          <p id="formStatus" class="form-status" aria-live="polite"></p>
-        </form>
-      </div>
-
-      <aside class="contact-info">
-        <div class="info-card">
-          <h3>Visit / Contact</h3>
-          <p>Address: Amhat, Nakchhed ka Purva</p>
-          <p>Distric: Sultanpur</p>
-          <p>Phone: +91 9936361463 / +91 9453516663</p>
-          <p>Email: info@ruralacademy.org</p>
-
-          <div class="socials">
-            <a href="#" aria-label="facebook">Facebook</a>
-            <a href="#" aria-label="instagram">Instagram</a>
+          <div class="team-card">
+            <img src="" alt="team" />
+            <h4>Program Lead</h4>
+            <p class="role">Teacher & Coordinator</p>
           </div>
 
-          
+          <div class="team-card">
+            <img src="" alt="team" />
+            <h4>Volunteer Coordibator</h4>
+            <p class="role">Community Outreach</p>
+          </div>
         </div>
-      </aside>
-    </div>
-  </section>
+      </div>
+    </section>
+
+    <!-- =====CONTACT====== -->
+
+    <section id="contact" class="section section-contact">
+      <div class="container contact-grid">
+        <div class="contact-form-wrap">
+          <h2 class="section-title">Contact / Volunteer</h2>
+          <p>
+            Interested to volunteer or support? Fill the form and we will reach
+            out.
+          </p>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <input id="vname" type="text" placeholder="Name" required />
+            <input
+              id="vphone"
+              type="tel"
+              placeholder="Phone Number "
+              required
+            />
+            <input id="vemail" type="email" placeholder="Email" required />
+            <textarea
+              id="vmsg"
+              type="text"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+
+            <div class="form-actions">
+              <button class="btn" type="submit">Send Message</button>
+              <a class="btn outline" href="#donate">Donate</a>
+            </div>
+
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="contact-info">
+          <div class="info-card">
+            <h3>Visit / Contact</h3>
+            <p>Address: Amhat, Nakchhed ka Purva</p>
+            <p>Distric: Sultanpur</p>
+            <p>Phone: +91 9936361463 / +91 9453516663</p>
+            <p>Email: info@ruralacademy.org</p>
+
+            <div class="socials">
+              <a href="#" aria-label="facebook">Facebook</a>
+              <a href="#" aria-label="instagram">Instagram</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ======FOOTER====== -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          © <span id="year"></span> Rural Informative & Social Harmony Academy
+        </div>
+      </div>
+    </footer>
+
+    <!-- back to top btn -->
+    <button id="backToTopBtn"></button>
+
+    <!-- animate library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        delay: 150,
+        easing: "ease-in-out", // smooth curve
+        offset: 120, // scroll trigger
+        once: true,
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-  
-
-
-  <!-- ======FOOTER====== -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>© <span id="year"></span> Rural Informative & Social Harmony Academy</div>
-    
-    </div>
-  </footer>
-
-  <script src="scripts.js"></script>
-</body>
+    <script src="./scripts/animationScripts.js"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
-  
-
-  
-
-  
-
- 
-
-
-
