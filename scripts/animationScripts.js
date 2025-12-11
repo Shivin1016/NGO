@@ -60,8 +60,7 @@ gsap.from("#about" ,{
         trigger:"#about",
         scroller:"body", 
         start:'top 85%', 
-        end:"top 45%",
-        scrub:2,
+        end:"top 45%", 
     }
 }) 
 gsap.from("#programs" ,{
@@ -71,7 +70,7 @@ gsap.from("#programs" ,{
     scrollTrigger:{
         trigger:"#programs",
         scroller:"body", 
-        start:'top 85%', 
+        start:'top 85%',  
     }
 })
 gsap.from("#team" ,{
@@ -81,7 +80,7 @@ gsap.from("#team" ,{
     scrollTrigger:{
         trigger:"#team",
         scroller:"body", 
-        start:'top 85%', 
+        start:'top 85%',  
     }
 })
 gsap.from("#contact" ,{
@@ -91,6 +90,6 @@ gsap.from("#contact" ,{
     scrollTrigger:{
         trigger:"#contact",
         scroller:"body", 
-        start:'top 85%', 
+        start:'top 85%',  
     }
 })

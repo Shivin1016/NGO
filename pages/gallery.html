@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/gallery.css" />
+  </head>
+  <body>
+    <!-- ======nav-HEADER====== -->
+    <header class="site-header" id="navHeader">
+      <div class="container header-inner">
+        <div class="brand">
+          <img
+            src="../assets/logos/Header_Logo.png"
+            alt="RISHA Logo"
+            class="logo-single site-logo"
+          />
+          <img
+            src="../assets/logos/logo.png"
+            alt="RISHA Logo"
+            id="logo"
+            class="site-logo"
+          />
+        </div>
+
+        <nav id="mainNav" class="nav nav-menu-bar">
+          <a class="navItem" href="../index.html">Home</a>
+          <a class="navItem" href="../index.html#about">About</a>
+          <a class="navItem" href="../index.html#programs">Programs</a>
+          <a class="navItem" href="../pages/gallery.html">Gallery</a>
+          <a class="navItem" href="../index.html#team">Team</a>
+          <a class="navItem" href="../index.html#contact" class="donate-btn">Contact</a>
+        </nav>
+
+        <div class="cta-wrap">
+          <a href="../pages/volunteer-form.html" class="btn navBtn ghost">Volunteer</a>
+          <a href="#donate" class="btn navBtn" id="donate">Donate</a>
+          <a href="../pages/volunteer-form.html">
+            <img
+              src="../assets/icons/people.png"
+              id="icon"
+              class="volunteer bounce"
+              alt="people"
+            />
+          </a>
+          <a href="#donate"
+            ><img
+              id="icon"
+              class="soft-pulse"
+              src="../assets/icons/donateIcon.png"
+              alt="donateIcom"
+          /></a>
+          <button id="navToggle" class="hamburger" aria-label="menu">☰</button>
+        </div>
+      </div>
+    </header>
+    <!-- ======title-HEADER====== -->
+    <header class="header">
+      <div class="title">  
+        <h1>Our Gallery</h1>
+      </div>
+    </header>
+
+    <!-- gallery section -->
+    <div id="photo-gallery" class="section-gallery">
+      <div class="slides">
+        <div class="slide">
+          <img src="../assets/volunteer/v1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../assets/volunteer/v2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../assets/volunteer/v3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../assets/volunteer/v4.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../assets/volunteer/v8.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../assets/volunteer/v11.jpg" alt="" />
+        </div>
+
+        <div class="slide">
+          <img src="../assets/volunteer/v12.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../assets/volunteer/v13.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../assets/volunteer/v14.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <button class="arrows" id="prev" onclick="prevSlide(-1)">&#10094;</button>
+      <button class="arrows next-arrow" id="next" onclick="prevSlide(1)">&#10095;</button>
+
+      <!-- thumbnail -->
+      <div class="thumbnail">
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v1.jpg"
+            alt=""
+            onclick="currThumbNail(1)"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v2.jpg"
+            alt=""
+            onclick="currThumbNail(2)"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v3.jpg"
+            alt=""
+            onclick="currThumbNail(3)"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v4.jpg"
+            alt=""
+            onclick="currThumbNail(4)"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v8.jpg"
+            alt=""
+            onclick="currThumbNail(5)"
+          />
+        </div>
+
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v11.jpg"
+            alt=""
+            onclick="currThumbNail(6)"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v12.jpg"
+            alt=""
+            onclick="currThumbNail(7)"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v13.jpg"
+            alt=""
+            onclick="currThumbNail(8)"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v14.jpg"
+            alt=""
+            onclick="currThumbNail(10)"
+          />
+        </div>
+      </div>
+    </div>
+ 
+    <script src="../scripts/gallery.js"></script>
+  </body>
+</html>
