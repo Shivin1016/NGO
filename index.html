@@ -9,13 +9,23 @@
       name="description"
       content="Inclusive education & skills for children with special needs. Volunteer | Donate | Support"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+
+    <!-- top marker for back to top btn -->
+    <div id="topMarker"></div> 
     <!-- ======HEADER====== -->
-    <header class="site-header">
+    <header class="site-header" id="navHeader">
       <div class="container header-inner">
         <div class="brand">
           <img
@@ -31,17 +41,20 @@
           />
         </div>
         <nav id="mainNav" class="nav nav-menu-bar">
-          <a class="navItem" href="#home">Home</a>
+          <a class="navItem" href="./index.html">Home</a>
           <a class="navItem" href="#about">About</a>
           <a class="navItem" href="#programs">Programs</a>
+          <a class="navItem" href="./pages/gallery.html">Gallery</a>
           <a class="navItem" href="#team">Team</a>
           <a class="navItem" href="#contact" class="donate-btn">Contact</a>
         </nav>
 
         <div class="cta-wrap">
-          <a href="#contactForm" class="btn navBtn ghost">Volunteer</a>
+          <a href="./pages/volunteer-form.html" class="btn navBtn ghost"
+            >Volunteer</a
+          >
           <a href="#donate" class="btn navBtn" id="donate">Donate</a>
-          <a href="#contactForm">
+          <a href="./pages/volunteer-form.html">
             <img
               src="./assets/icons/people.png"
               id="icon"
@@ -100,10 +113,27 @@
 
         <div class="hero-right gsap-reveal">
           <div class="hero-card">
-            <img
-              src="./assets/images/customImages/HeroImage.jpg"
-              alt="Education"
-            />
+            <!-- slide show -->
+            <div class="slide-show">
+              <div class="slides" id="slideshow">
+                <div class="slide fade">
+                  <img src="./assets/volunteer/v1.jpg" alt="" />
+                </div>
+                <div class="slide fade">
+                  <img
+                    src="./assets/images/programsImages/ocassion1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/volunteer/v3.jpg" alt="" />
+                </div>
+                <div class="slide fade">
+                  <img src="./assets/volunteer/v4.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
             <div class="hero-card-body">
               <h3>Join the mission</h3>
               <p>
@@ -344,9 +374,9 @@
     <!-- =====CONTACT====== -->
 
     <section id="contact" class="section section-contact">
+      <h2 class="section-title">Contact / Volunteer</h2>
       <div class="container contact-grid">
         <div class="contact-form-wrap">
-          <h2 class="section-title">Contact / Volunteer</h2>
           <p>
             Interested to volunteer or support? Fill the form and we will reach
             out.
@@ -387,8 +417,15 @@
             <p>Email: info@ruralacademy.org</p>
 
             <div class="socials">
-              <a href="#" aria-label="facebook">Facebook</a>
-              <a href="#" aria-label="instagram">Instagram</a>
+              <a href="#" aria-label="facebook">
+                <i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+              <a href="#" aria-label="instagram">
+                <i class="fa-brands fa-instagram"></i> Instagram</a
+              >
+              <a href="#" aria-label="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+              >
             </div>
           </div>
         </aside>
@@ -404,7 +441,7 @@
       </div>
     </footer>
 
-    <!-- back to top btn -->
+    <!-- back to top btn --> 
     <button id="backToTopBtn"></button>
 
     <!-- animate library -->
@@ -423,12 +460,16 @@
       integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script> 
+    ></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script src="./scripts/animationScripts.js"></script>
-    <script src="scripts.js"></script>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>

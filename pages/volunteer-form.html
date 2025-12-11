@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer Registration Form</title>
+    <link rel="stylesheet" href="../styles/volunteer-from.css" />
+  </head>
+  <body>
+    <!-- ======nav-HEADER====== -->
+    <header class="site-header" id="navHeader">
+      <div class="container header-inner">
+        <div class="brand">
+          <img
+            src="../assets/logos/Header_Logo.png"
+            alt="RISHA Logo"
+            class="logo-single site-logo"
+          />
+          <img
+            src="../assets/logos/logo.png"
+            alt="RISHA Logo"
+            id="logo"
+            class="site-logo"
+          />
+        </div>
+
+        <nav id="mainNav" class="nav nav-menu-bar">
+          <a class="navItem" href="../index.html">Home</a>
+          <a class="navItem" href="../index.html#about">About</a>
+          <a class="navItem" href="../index.html#programs">Programs</a>
+          <a class="navItem" href="../pages/gallery.html">Gallery</a>
+          <a class="navItem" href="../index.html#team">Team</a>
+          <a class="navItem" href="../index.html#contact" class="donate-btn"
+            >Contact</a
+          >
+        </nav>
+
+        <div class="cta-wrap">
+          <a href="../pages/volunteer-form.html" class="btn navBtn ghost"
+            >Volunteer</a
+          >
+          <a href="#donate" class="btn navBtn" id="donate">Donate</a>
+          <a href="../pages/volunteer-form.html">
+            <img
+              src="../assets/icons/people.png"
+              id="icon"
+              class="volunteer bounce"
+              alt="people"
+            />
+          </a>
+          <a href="#donate"
+            ><img
+              id="icon"
+              class="soft-pulse"
+              src="../assets/icons/donateIcon.png"
+              alt="donateIcom"
+          /></a>
+          <button id="navToggle" class="hamburger" aria-label="menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- form  -->
+    <section class="form-section">
+      <div class="title">
+        <img
+          class="icon"
+          src="../assets/images/customImages/volunteer-form-logo.png"
+          alt="volunteer"
+        />
+        <div class="subtitle">
+          <h1>Volunteer Form</h1>
+          <p>Fill in the form below to volunteer to our organization</p>
+        </div>
+      </div>
+      <form
+        action="#"
+        class="form-container"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <!-- Personal Information -->
+        <div class="form-line">
+          <div class="form-label">
+            <label>Name <span class="form-required">*</span></label>
+          </div>
+          <div class="form-input">
+            <span class="form-sub-label-container">
+              <input type="text" name="first-name" required />
+              <label class="form-sub-label">First Name</label>
+            </span>
+            <span class="form-sub-label-container">
+              <input type="text" name="last-name" required />
+              <label class="form-sub-label">Last Name</label>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-line">
+          <div class="form-label">
+            <label>Date of Birth<span class="form-required">*</span></label>
+          </div>
+          <div class="form-input">
+            <input type="date" name="dob" required />
+          </div>
+        </div>
+
+        <div class="form-line">
+          <div class="form-label">
+            <label>Email Address<span class="form-required">*</span></label>
+          </div>
+          <div class="form-input">
+            <input type="email" name="email" required />
+            <label class="form-sub-label">example@example.com</label>
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="form-label">
+            <label>Phone Number<span class="form-required">*</span></label>
+          </div>
+          <div class="form-input">
+            <input type="tel" name="phone" required />
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="form-label">
+            <label>Address<span class="form-required">*</span></label>
+          </div>
+          <div class="form-input">
+            <textarea name="address" required></textarea>
+          </div>
+        </div>
+
+        <div class="form-line">
+          <div class="form-label">
+            <label>Gender<span class="form-required">*</span></label>
+          </div>
+          <div class="form-input">
+            <select name="gender">
+              <option value="">Select</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="form-line">
+          <div class="form-label">
+            <label
+              >Education Qualification<span class="form-required"
+                >*</span
+              ></label
+            >
+          </div>
+          <div class="form-input">
+            <input type="text" name="qualification" required />
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="form-label">
+            <label
+              >Profession / Current Course<span class="form-required"
+                >*</span
+              ></label
+            >
+          </div>
+          <div class="form-input">
+            <input type="text" name="profession" />
+          </div>
+        </div>
+
+        <!-- Preferences -->
+         <div class="form-head-line">
+            <p>Interests and experience :</p>
+            <div class="form-line">
+                <div class="form-label">
+                    <label>Why are you interested in volunteering with RISHA?</label>
+                </div>
+                <div class="form-input">
+                    <input type="text" name="why-interested">
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="form-label">
+                    <label>Tell us about your previous volunteering experience.</label>
+                </div>
+                <div class="form-input">
+                    <input type="text" name="volunteer-experience">
+                </div>
+            </div>
+            <div class="form-line">
+              <div class="form-label">
+                <label
+                  >Volunteer Area of Interest<span class="form-required"
+                    >*</span
+                  ></label
+                >
+              </div>
+              <div class="form-input">
+                <select name="interested_area" required>
+                  <option value="">Select</option>
+                  <option>Teaching Support</option>
+                  <option>Fundraising</option>
+                  <option>Event Organization</option>
+                  <option>Social Media & Content</option>
+                  <option>Field Work</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+         </div>
+
+        <div class="form-head-line">
+          <p>Availability</p>
+          <div class="form-line">
+            <div class="form-label">
+              <label
+                >What dates are you available?<span class="form-required"
+                  >*</span
+                ></label
+              >
+            </div>
+            <div class="form-input">
+              <input type="text" name="available-date" id="available-date" />
+            </div>
+          </div> 
+          <div class="form-line">
+            <div class="form-label">
+              <label
+                >How many hours per week are you available?<span class="form-required"
+                  >*</span
+                ></label
+              >
+            </div>
+            <div class="form-input">
+              <input type="text" name="available-hours" id="available-hours" />
+            </div>
+          </div> 
+        </div>
+
+        <!-- Skills -->
+        <div class="form-line">
+          <div class="form-label">
+            <label>Skills<span class="form-required">*</span></label>
+          </div>
+          <div class="form-input">
+            <textarea name="skills"></textarea>
+          </div>
+        </div>
+
+        <div class="form-line">
+          <div class="form-label">
+            <label
+              >Why do you want to volunteer?<span class="form-required"
+                >*</span
+              ></label
+            >
+          </div>
+          <div class="form-input">
+            <textarea name="motivation"></textarea>
+          </div>
+        </div>
+
+        <!-- Optional Upload -->
+        <div class="form-line">
+          <div class="form-label">
+            <label
+              >ID Proof (Optional)<span class="form-required">*</span></label
+            >
+          </div>
+          <div class="form-input">
+            <input type="file" name="idproof" accept="image/*,.pdf" />
+          </div>
+        </div>
+
+        <div class="form-line">
+          <div class="form-label">
+            <label>Resume (Optional)<span class="form-required">*</span></label>
+          </div>
+          <div class="form-input">
+            <input type="file" name="resume" accept=".pdf,.doc,.docx" />
+          </div>
+        </div>
+
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </section>
+    <script src="../scripts/volunteer-from.js"></script>
+  </body>
+</html>
