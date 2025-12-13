@@ -100,27 +100,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // smooth scroll for internal links
-  document.querySelectorAll('a[href^="#"]').forEach((a) => {
-    a.addEventListener("click", function (e) {
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    });
-  });
+  // document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  //   a.addEventListener("click", function (e) {
+  //     const target = document.querySelector(this.getAttribute("href"));
+  //     if (target) {
+  //       e.preventDefault();
+  //       target.scrollIntoView({ behavior: "smooth", block: "start" });
+  //     }
+  //   });
+  // });
 });
 
 // back to top btn(not working properly)
 const backToTopBtn = document.getElementById("backToTopBtn");
 
+// console.log(backToTopBtn);
 window.addEventListener("scroll", () => {
-  console.log(backToTopBtn);
   console.log("scrolling ..");
   if (window.scrollY > 300) {
-    backToTopBtn.classList.add("show");
+    backToTopBtn.classList.add("showBtn");
   } else {
-    backToTopBtn.classList.remove("show");
+    backToTopBtn.classList.remove("showBtn");
   }
 });
 backToTopBtn.addEventListener("click", (e) => {
@@ -130,26 +130,7 @@ backToTopBtn.addEventListener("click", (e) => {
     behavior: "smooth",
   });
 });
-
-const topMarker = document.getElementById("topMarker");
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    if (entries[0].isIntersecting) {
-      backToTopBtn.classList.remove("show"); // top visible
-    } else {
-      backToTopBtn.classList.add("show"); // top not visible
-    }
-  },
-  { threshold: 0 }
-);
-
-observer.observe(topMarker);
-
-backToTopBtn.addEventListener("click", () => {
-  document.documentElement.scrollTop = 0; // for modern browsers
-  document.body.scrollTop = 0; // for Safari
-});
+ 
 
 // slide-show for hero-right-card
 const slides = document.querySelectorAll(".slide");

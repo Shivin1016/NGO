@@ -26,9 +26,9 @@ body {
   margin: 0;
   padding-top: 20px;
   background: linear-gradient(180deg, #f8fff9, #f5fbf7);
-  color: #0f2b22; 
+  color: #0f2b22;
   overflow-x: hidden;
-  overflow-y: auto; 
+  overflow-y: auto;
 
   position: relative;
 }
@@ -43,8 +43,8 @@ body {
 section {
   width: 100%;
   position: relative;
-  padding-bottom: 50px; /* spaces for line */ 
-  min-height: 100svh; /* mobile-safe */ 
+  padding-bottom: 50px; /* spaces for line */
+  min-height: 100svh; /* mobile-safe */
   opacity: 1;
 }
 #home,
@@ -72,6 +72,42 @@ section {
 }
 h1 {
   transition: all ease 0.3s;
+}
+/* animations */
+/* ================= FADE UP ANIMATION ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= SLIDE LEFT ================= */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ================= SLIDE RIGHT ================= */
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 /*line under every section */
 section::after {
@@ -325,7 +361,7 @@ picture,
 .slide {
   margin: auto;
   height: 100%;
-  /* animation: fade 0.5s; */
+  animation: fade 0.5s;
   position: absolute;
   transition: opacity 0.7s ease;
   opacity: 0;
@@ -449,14 +485,14 @@ picture,
   background: #fff;
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .about-box h2 {
@@ -469,7 +505,7 @@ picture,
   font-size: 15px;
   line-height: 1.6;
   color: #555;
-}   
+}
 
 .icon {
   font-size: 30px;
@@ -500,7 +536,7 @@ picture,
   .about-box p {
     font-size: 14px;
   }
-} 
+}
 
 /* achievement seciton */
 #achievement .section-subtitle {
@@ -812,7 +848,7 @@ picture,
 #backToTopBtn:active {
   background-color: #555;
 }
-#backToTopBtn.show {
+#backToTopBtn.showBtn {
   opacity: 1;
   pointer-events: auto;
 }
@@ -1095,5 +1131,64 @@ picture,
   }
   .team-card {
     width: 90%;
+  }
+}
+
+/* reveal animations */
+/* ================= REVEAL BASE ================= */
+.reveal {
+  opacity: 1;                 /* safety fallback */
+  transform: none;
+}
+
+/* initial hidden state only when JS is active */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* visible state */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+/* ================= HEADINGS ================= */
+.js .reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.js .reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+}
+
+.reveal-left.active,
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ================= MOBILE OPT ================= */
+@media (max-width: 767px) {
+  .reveal,
+  .reveal-left,
+  .reveal-right {
+    transition-duration: 0.5s;
+    transform: translateY(20px);
+  }
+}
+
+/* ================= ACCESSIBILITY ================= */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-left,
+  .reveal-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
