@@ -29,7 +29,6 @@ body {
   color: #0f2b22;
   overflow-x: hidden;
   overflow-y: auto;
-
   position: relative;
 }
 /* responsive container */
@@ -559,7 +558,7 @@ picture,
   margin: 20px auto;
   padding: 20px 10px;
   max-width: 350px;
-  max-height: 350px;
+  min-height: 350px;
   background-color: var(--accent-2);
   display: flex;
   flex-direction: column;
@@ -579,6 +578,14 @@ picture,
   color: var(--card);
   display: flex;
   gap: 0.8rem;
+  align-items: center;
+}
+.achieve-box p {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #cccbcb;
+  display: flex;
   align-items: center;
 }
 .achieve-box img {
@@ -817,18 +824,107 @@ picture,
   width: 90%;
 }
 
+/* contact icon btn */
+/* #contactBtn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  transition: all 0.3s ease;
+  z-index: 999999; 
+} */
+#contactBtn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  transition: all 0.3s ease;
+  z-index: 999999;
+}
+#contactBtn img {
+  background-color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+} 
+#contactBtn img:active {
+  transform: scale(1.05) translateY(-5px);
+}
+/* For tablets */
+@media screen and (max-width: 1024px) {
+  #contactBtn {
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    right: 25px;
+  }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 768px) {
+  #contactBtn {
+    width: 56px;
+    height: 56px;
+    bottom: 85px;
+    right: 19px;
+  }
+}
+
+/* For very small phones */
+@media screen and (max-width: 480px) {
+  #contactBtn {
+    width: 52px;
+    height: 52px;
+    bottom: 70px;
+    right: 15px;
+    border-radius: 50%; /* Makes it circular on mobile */
+  }
+}
+
+/* For extra small devices */
+@media screen and (max-width: 360px) {
+  #contactBtn {
+    width: 48px;
+    height: 48px;
+    bottom: 65px;
+    right: 12px;
+  }
+}
+
+/* For landscape orientation on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  #contactBtn {
+    width: 44px;
+    height: 44px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+ 
+
 /* styles for back to top btn */
 #backToTopBtn {
   display: inline-block;
   background-color: #601010;
   outline: none;
   border: none;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 30px;
   pointer-events: none;
   transition: opacity 0.3s;
@@ -851,6 +947,58 @@ picture,
 #backToTopBtn.showBtn {
   opacity: 1;
   pointer-events: auto;
+}
+/* For tablets */
+@media screen and (max-width: 1024px) {
+  #backToTopBtn {
+    width: 55px;
+    height: 55px;
+    bottom: 40px;
+    right: 25px;
+  }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 768px) {
+  #backToTopBtn {
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 20px;
+  }
+}
+
+/* For very small phones */
+@media screen and (max-width: 480px) {
+  #backToTopBtn {
+    width: 46px;
+    height: 46px;
+    bottom: 20px;
+    right: 19px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Makes it circular on mobile */
+  }
+}
+
+/* For extra small devices */
+@media screen and (max-width: 360px) {
+  #backToTopBtn {
+    width: 45px;
+    height: 45px;
+    bottom: 10px;
+    right: 16px; 
+  }
+}
+
+/* For landscape orientation on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  #backToTopBtn {
+    width: 44px;
+    height: 44px;
+    bottom: 15px;
+    right: 15px;
+  }
 }
 
 /*animations for button*/
@@ -1137,7 +1285,7 @@ picture,
 /* reveal animations */
 /* ================= REVEAL BASE ================= */
 .reveal {
-  opacity: 1;                 /* safety fallback */
+  opacity: 1; /* safety fallback */
   transform: none;
 }
 
