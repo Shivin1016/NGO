@@ -1,4 +1,5 @@
 // scripts.js - mobile menu, simple reveal, form validation, footer year
+
 document.addEventListener("DOMContentLoaded", function () {
   // footer year
   const year = document.getElementById("year");
@@ -34,41 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     mainNav.classList.toggle("active");
   });
-
-  // highlight current tab nav link
-  const links = document.querySelectorAll("#mainNav .navItem");
-  const currentPath = location.pathname.split("/").pop();
-  const currentHash = location.hash;
-
-  // Clear previous active classes
-  links.forEach((a) => a.classList.remove("active"));
-
-  // Case 1: Highlight based on page (index.html / gallery.html)
-  links.forEach((a) => {
-    const linkHref = a.getAttribute("href");
-
-    // For page links (index.html, gallery.html)
-    if (linkHref.endsWith(currentPath) && currentPath !== "") {
-      a.classList.add("active");
-    }
-
-    // Special case: You are on index.html without typing index.html
-    if (
-      (currentPath === "" || currentPath === "index.html") &&
-      linkHref === "./index.html"
-    ) {
-      a.classList.add("active");
-    }
-  });
-
-  // Case 2: Highlight based on hash (#about, #team)
-  if (currentHash) {
-    links.forEach((a) => {
-      if (a.getAttribute("href") === currentHash) {
-        a.classList.add("active");
-      }
+  // Close menu when clicking a link
+  document.querySelectorAll(".navItem").forEach((link) => {
+    link.addEventListener("click", () => {
+      document.getElementById("mainNav").classList.remove("active");
     });
-  }
+  });
 
   // basic form validation
   const form = document.getElementById("contactForm");
@@ -113,11 +85,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // back to top btn(not working properly)
 const backToTopBtn = document.getElementById("backToTopBtn");
+// For scrolling inside a div, not window
+const myDiv = document.getElementById("bodyTab");
 
-// console.log(backToTopBtn);
-window.addEventListener("scroll", () => {
-  console.log("scrolling ..");
-  if (window.scrollY > 300) {
+bodyTab.addEventListener("scroll", () => {
+  const scrollPosition = bodyTab.scrollTop; // Current scroll position  
+
+  // Show button when scrolled 100px or 20% down 
+  if (scrollPosition > 200) { 
     backToTopBtn.classList.add("showBtn");
   } else {
     backToTopBtn.classList.remove("showBtn");
@@ -125,12 +100,11 @@ window.addEventListener("scroll", () => {
 });
 backToTopBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  window.scrollTo({
+  bodyTab.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 });
- 
 
 // slide-show for hero-right-card
 const slides = document.querySelectorAll(".slide");
