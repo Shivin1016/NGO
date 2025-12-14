@@ -855,12 +855,7 @@ picture,
   background-color: #fff;
   transition: all 0.3s ease;
   border-radius: 50%;
-}
-#contactBtn img:hover {
-  background-color: transparent;
-  filter: invert(60%) sepia(90%) saturate(400%) hue-rotate(90deg)
-    brightness(95%) contrast(95%);
-}
+} 
 #contactBtn img:active {
   transform: scale(1.05) translateY(-5px);
 }
