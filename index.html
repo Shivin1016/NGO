@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
-    <link rel="icon" sizes="32x32" href="../assets/icons/favicon.ico" type="image/png">
+
+    <title>Rural Informative & Social Harmony Academy</title>
+    <meta
+      name="description"
+      content="Inclusive education & skills for children with special needs. Volunteer | Donate | Support"
+    /> 
+    <link rel="icon" sizes="32x32" href="./assets/icons/favicon.ico" type="image/png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -12,45 +17,44 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../styles/gallery.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body>
-    <!-- ======nav-HEADER====== -->
+  <body id="bodyTab">
+    <!-- ======HEADER====== -->
     <header class="site-header" id="navHeader">
       <div class="container header-inner">
         <div class="brand">
           <img
-            src="../assets/logos/Header_Logo.png"
+            src="./assets/logos/Header_Logo.png"
             alt="RISHA Logo"
             class="logo-single site-logo"
           />
           <img
-            src="../assets/logos/logo.png"
+            src="./assets/logos/logo.png"
             alt="RISHA Logo"
             id="logo"
             class="site-logo"
           />
         </div>
-
         <nav id="mainNav" class="nav nav-menu-bar">
-          <a class="navItem" href="../index.html">Home</a>
-          <a class="navItem" href="../index.html#about">About</a>
-          <a class="navItem" href="../index.html#programs">Programs</a>
-          <a class="navItem" href="../pages/gallery.html">Gallery</a>
-          <a class="navItem" href="../index.html#team">Team</a>
-          <a class="navItem" href="../index.html#contact" class="donate-btn"
-            >Contact</a
-          >
+          <a class="navItem" href="./index.html">Home</a>
+          <a class="navItem" href="#about">About</a>
+          <a class="navItem" href="#programs">Programs</a>
+          <a class="navItem" href="./pages/gallery.html">Gallery</a>
+          <a class="navItem" href="#team">Team</a>
+          <a class="navItem" href="#contact" class="donate-btn">Contact</a>
         </nav>
 
         <div class="cta-wrap">
-          <a href="../pages/volunteer-form.html" class="btn navBtn ghost"
+          <a href="./pages/volunteer-form.html" class="btn navBtn ghost"
             >Volunteer</a
           >
           <a href="#donate" class="btn navBtn" id="donate">Donate</a>
-          <a href="../pages/volunteer-form.html">
+          <a href="./pages/volunteer-form.html">
             <img
-              src="../assets/icons/people.png"
+              src="./assets/icons/people.png"
               id="icon"
               class="volunteer bounce"
               alt="people"
@@ -60,234 +64,511 @@
             ><img
               id="icon"
               class="soft-pulse"
-              src="../assets/icons/donateIcon.png"
+              src="./assets/icons/donateIcon.png"
               alt="donateIcom"
           /></a>
           <button id="navToggle" class="hamburger" aria-label="menu">☰</button>
         </div>
       </div>
     </header>
-    <!-- ======title-HEADER====== -->
-    <header class="header">
-      <div class="title">
-        <h1>Our Gallery</h1>
-      </div>
-    </header>
 
-    <!-- gallery section -->
-    <div id="photo-gallery" class="section-gallery">
-      <div class="slides">
-        <div class="slide">
-          <img src="../assets/volunteer/v1.jpg" alt="volunteer" />
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <img src="../assets/volunteer/v2.jpg" alt="" />
+    <!-- ======HERO====== -->
+    <section id="home" class="hero" data-aos="fade-up">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title">
+            Education, Skills & Dignity for Every Child with Disabilities
+          </h1>
 
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <video muted loop preload="metadata">
-            <source src="../assets/volunteer/v1.3.mp4" type="video/mp4" />
-          </video>
+          <p data-aos="fade-right" data-aos-delay="200" class="lead">
+            We provide inclusive education and vocational training to children
+            with special needs in rural areas — helping them become confident,
+            independent and self-reliant.
+          </p>
 
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <img src="../assets/volunteer/v3.jpg" alt="" />
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <img src="../assets/volunteer/v4.jpg" alt="" />
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <video muted loop preload="metadata">
-            <source src="../assets/volunteer/v1.5.mp4" type="video/mp4" />
-          </video>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <img src="../assets/volunteer/v8.jpg" alt="" />
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <img src="../assets/volunteer/v11.jpg" alt="" />
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
+          <div class="hero-ctas" data-aos="fade-up" data-aos-delay="300">
+            <a class="btn big" href="#programs">View Programs</a>
+            <a class="btn outline" href="#contact">Get Involved</a>
+          </div>
+
+          <div class="stats" data-aos="zoom-in" data-aos-delay="400">
+            <div class="stat">
+              <div class="num">1200+</div>
+              <div class="lbl">Children Supported</div>
+            </div>
+
+            <div class="stat">
+              <div class="num">45+</div>
+              <div class="lbl">Volunteers</div>
+            </div>
+
+            <div class="stat">
+              <div class="num">10+</div>
+              <div class="lbl">Villages Reached</div>
+            </div>
+          </div>
         </div>
 
-        <!-- some videos -->
-        <div class="slide">
-          <video muted loop preload="metadata">
-            <source src="../assets/volunteer/v1.1.mp4" type="video/mp4" />
-          </video>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
+        <div class="hero-right gsap-reveal">
+          <div class="hero-card">
+            <!-- slide show -->
+            <div class="slide-show">
+              <div class="slides" id="slideshow">
+                <div class="slide">
+                  <img src="./assets/volunteer/v1.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./assets/volunteer/v17.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/programsImages/ocassion1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img src="./assets/volunteer/v3.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./assets/volunteer/v4.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./assets/volunteer/v16.jpg" alt="" />
+                </div>
+              </div>
+            </div>
 
-        <div class="slide">
-          <img src="../assets/volunteer/v12.jpg" alt="" />
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <img src="../assets/volunteer/v13.jpg" alt="" />
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <img src="../assets/volunteer/v14.jpg" alt="" />
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
-        </div>
-        <div class="slide">
-          <img src="../assets/volunteer/v15.jpg" alt="" />
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            quibusdam!
-          </h3>
+            <div class="hero-card-body">
+              <h3>Join the mission</h3>
+              <p>
+                Volunteer, donate or partner with us to bring sustainable change
+                in rural communities.
+              </p>
+              <div class="card-actions">
+                <a class="btn" href="#contact">Contact Us</a>
+                <a class="btn outline" href="#donate">Donate</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Next and previous buttons -->
-      <button class="arrows" id="prev" onclick="prevSlide(-1)">&#10094;</button>
-      <button class="arrows next-arrow" id="next" onclick="prevSlide(1)">
-        &#10095;
-      </button>
+    <!-- ====ABOUT===== -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Us</h2>
+      <div class="container about-wrap">
+        <div class="about-left">
+          <h1>Rural Informative & Social Harmony Academy</h1>
+          <p>
+            Our mission is to provide accessible and tailored education to
+            children living with special needs. We work closely with teachers,
+            families, and village communities to create a long-term positive
+            impact.
+          </p>
 
-      <!-- thumbnail -->
-      <div class="thumbnail">
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v1.jpg"
-            alt=""
-            onclick="currThumbNail(1)"
-          />
-        </div>
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v2.jpg"
-            alt=""
-            onclick="currThumbNail(2)"
-          />
-        </div>
-        <div class="item">
-          <video class="currImg" muted loop onclick="currThumbNail(3)">
-            <source src="../assets/volunteer/v1.3.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v3.jpg"
-            alt=""
-            onclick="currThumbNail(4)"
-          />
-        </div>
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v4.jpg"
-            alt=""
-            onclick="currThumbNail(5)"
-          />
-        </div>
-        <div class="item">
-          <video class="currImg" muted loop onclick="currThumbNail(6)">
-            <source src="../assets/volunteer/v1.5.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v8.jpg"
-            alt=""
-            onclick="currThumbNail(7)"
-          />
-        </div>
+          <ul class="bullets">
+            <li>Individualized learning plans</li>
+            <li>Vocational and livelihood training</li>
+            <li>Parent and community awareness programs</li>
+            <li>Regular health and development camps</li>
+          </ul>
 
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v11.jpg"
-            alt=""
-            onclick="currThumbNail(8)"
-          />
+          <div class="about-actions">
+            <a class="btn" href="#programs">Programs</a>
+            <a class="btn outline" href="#contact" target="_blank"
+              >Registration</a
+            >
+          </div>
         </div>
-        <div class="item">
-          <video class="currImg" muted loop onclick="currThumbNail(9)">
-            <source src="../assets/volunteer/v1.1.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v12.jpg"
-            alt=""
-            onclick="currThumbNail(10)"
-          />
-        </div>
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v13.jpg"
-            alt=""
-            onclick="currThumbNail(11)"
-          />
-        </div>
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v14.jpg"
-            alt=""
-            onclick="currThumbNail(12)"
-          />
-        </div>
-        <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v15.jpg"
-            alt=""
-            onclick="currThumbNail(13)"
-          />
+        <div class="about-right">
+          <div class="glass-card">
+            <img
+              src="./assets/images/customImages/classroom.png"
+              alt="classroom"
+              class="hero-image abt-img"
+            />
+          </div>
         </div>
       </div>
+      <div class="container about-mission">
+        <div class="about-box">
+          <h2><i class="fa-solid fa-people-group icon"></i>Who We Are</h2>
+          <p>
+            We are a community-driven NGO dedicated to supporting children,
+            women, and persons with disabilities through compassion and action.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h2><i class="fa-solid fa-note-sticky icon"></i> What We Do</h2>
+          <p>
+            We address real issues like education gaps, disability support,
+            healthcare, and livelihood needs with sustainable, long-term
+            programs.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h2><i class="fa-solid fa-building icon"></i>Our Mission</h2>
+          <p>
+            We aim to empower marginalized communities and create inclusive
+            opportunities through education, welfare, and development
+            initiatives.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- achievement section -->
+    <section id="achievement" class="section">
+      <h2 class="section-title">Our Achievement</h2>
+      <p class="section-subtitle">
+        <i class="fa-solid fa-hand-holding-heart"></i> Small actions can
+        transform communities — here’s what we’ve achieved together.
+      </p>
+      <div class="container achieve-wrapper">
+        <div class="achieve-box">
+          <h3>
+            <i class="fa-brands fa-accessible-icon"></i> Our Disability Support
+            Groups
+          </h3>
+          <img
+            id="achieveImg1"
+            src="./assets/volunteer/v18.jpg"
+            alt="Disabilities"
+          />
+          <p>
+            Creating safe spaces where individuals thrive together. Through 50+
+            monthly support sessions and specialized programs
+          </p>
+        </div>
+        <div class="achieve-box">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Children Educated</h3>
+          <img
+            id="achieveImg2"
+            src="./assets/education/e1.jpg"
+            alt="Education"
+          />
+          <p>
+            Building foundations for brighter tomorrows: 20+ years of
+            educational support, 500+ schools reached , 15,000+ children
+            educated
+          </p>
+        </div>
+        <div class="achieve-box">
+          <h3>
+            <i class="fa-solid fa-briefcase-medical"></i> Health Camps Organized
+          </h3>
+          <img id="achieveImg3" src="./assets/health/h1.jpg" alt="Health" />
+          <p>
+            Bringing healthcare to doorsteps, transforming communities. We've
+            organized 250+ health camps providing free medical services
+          </p>
+        </div>
+        <div class="achieve-box">
+          <h3>
+            <img
+              id="tree"
+              src="./assets/volunteer/plant-a-tree.png"
+              alt=""
+            />Trees Planted
+          </h3>
+          <img
+            id="achieveImg4"
+            src="./assets/volunteer/v14.jpg"
+            alt="Trees planted"
+          />
+          <p>
+            Growing a greener future, one tree at a time. We've successfully
+            planted 500,000+ trees across 100+ locations, creating urban forests
+          </p>
+        </div>
+        <div class="achieve-box">
+          <h3><i class="fa-solid fa-people-line"></i> Volunteers</h3>
+          <img
+            id="achieveImg4"
+            src="./assets/volunteer/v2.jpg"
+            alt="Trees planted"
+          />
+          <p>
+            Building India's largest volunteer community for social change:
+            5,000+ regular volunteers, 3,000+ corporate volunteers
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR PROGRAMS (6 cards) ===== -->
+    <section id="programs" class="section section-programs">
+      <div class="container">
+        <h2 class="section-title">Our Programs</h2>
+
+        <p class="section-lead">
+          We run tailored programs for children with special needs to build
+          skills, independence and community support.
+        </p>
+
+        <div class="programs-grid" role="list">
+          <!-- ====Card==== 1 -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p1-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo1.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p1-title">Inclusive Education</h3>
+              <p>
+                Specially designed classrooms and personalized learning plans
+                that help each child learn at their own pace.
+              </p>
+              <a class="p-link" href="#contact">Join</a>
+            </div>
+          </article>
+
+          <!-- =====Card===== 2 -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p2-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo2.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p2-title">Digital Learning</h3>
+              <p>
+                Basic computer and digital skills training to help children gain
+                confidence and future-ready abilities.
+              </p>
+              <a class="p-link" href="#contact">Learn More</a>
+            </div>
+          </article>
+
+          <!-- =====Card 3===== -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p3-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo3.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p3-title">Vocational Skills</h3>
+              <p>
+                Handicrafts, tailoring and other livelihood skills training to
+                build independence and income opportunities.
+              </p>
+              <a class="p-link" href="#contact">Get Involved</a>
+            </div>
+          </article>
+
+          <!-- =====Card 4===== -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p4-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo4.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p4-title">Creative Therapy</h3>
+              <p>
+                Art, music and play-based activities supporting emotional
+                development and self-expression.
+              </p>
+              <a class="p-link" href="#contact">Discover</a>
+            </div>
+          </article>
+
+          <!-- ======Card 5===== -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p5-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo5.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p5-title">Health & Camps</h3>
+              <p>
+                Regular health check-ups, therapy sessions and development
+                monitoring for well-being.
+              </p>
+              <a class="p-link" href="#contact">View Schedule</a>
+            </div>
+          </article>
+
+          <!-- =====Card 6===== -->
+          <article
+            class="program-card"
+            role="listitem"
+            aria-labelledby="p6-title"
+          >
+            <div
+              class="p-media"
+              style="
+                background-image: url('./assets/images/programsImages/Program_Photo6.png');
+              "
+              aria-hidden="true"
+            ></div>
+            <div class="p-content">
+              <h3 id="p6-title">Parent & Community</h3>
+              <p>
+                Workshops and awareness sessions for parents and community
+                members to promote inclusion and rights.
+              </p>
+              <a class="p-link" href="#contact">Participate</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====TEAM===== -->
+    <section id="team" class="section">
+      <div class="container">
+        <h2 class="center">Our Team</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <img
+              src="./assets/images/customImages/founder.jpg"
+              alt="Risha Verma"
+            />
+            <h4>Risha Verma</h4>
+            <p class="role">Founder</p>
+          </div>
+
+          <div class="team-card">
+            <img src="" alt="team" />
+            <h4>Program Lead</h4>
+            <p class="role">Teacher & Coordinator</p>
+          </div>
+
+          <div class="team-card">
+            <img src="" alt="team" />
+            <h4>Volunteer Coordibator</h4>
+            <p class="role">Community Outreach</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====CONTACT====== -->
+
+    <section id="contact" class="section section-contact">
+      <h2 class="section-title">Contact / Volunteer</h2>
+      <div class="container contact-grid">
+          <!-- FORM (TOP) -->
+        <div class="contact-form-wrap">
+            <p>
+              Interested to volunteer or support? Fill the form and we will reach out.
+            </p>
+
+             <form id="contactForm" class="contact-form" novalidate>
+            <input id="vname" type="text" placeholder="Name" required />
+            <input id="vphone" type="tel" placeholder="Phone Number" required />
+           <input id="vemail" type="email" placeholder="Email" required />
+             <textarea
+              id="vmsg"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+
+             <div class="form-actions">
+             <button class="btn" type="submit">Send Message</button>
+             <a class="btn outline" href="#donate">Donate</a>
+             </div>
+
+            <p id="formStatus" class="form-status"></p>
+           </form>
+        </div>
+
+    <!-- RIGHT / LEFT (same line): VISIT CARD -->
+    <div class="contact-bottom">
+    <aside class="contact-info">
+      <div class="info-card">
+        <h3>Visit / Contact</h3>
+        <p>Address: Amhat, Nakchhed ka Purva</p>
+        <p>District: Sultanpur</p>
+        <p>Phone: +91 9936361463 / +91 9453516663</p>
+        <p>Email: info@ruralacademy.org</p>
+
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+        </div>
+      </div>
+    </aside>
+
+     <!-- RIGHT: Google Map -->
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223.73334624878868!2d81.98484720318848!3d26.205344892031707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a63002aab66ad%3A0x18863eaf0a3bf2d5!2sHandicapped%20Child%20Organization!5e0!3m2!1sen!2sin!4v1766225621868!5m2!1sen!2sin" width="700" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     </div>
 
-    <script src="../scripts/gallery.js"></script>
+  </div>
+</section>
+
+
+
+    <!-- ======FOOTER====== -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          © <span id="year"></span> Rural Informative & Social Harmony Academy
+        </div>
+      </div>
+    </footer>
+
+    <!-- back to top btn -->
+    <button id="backToTopBtn"></button>
+    <!-- contact btn -->
+    <a id="contactBtn" href="https://wa.me/91" target="_blank">
+      <img src="./assets/icons/whatsIcon.png" alt="contactUs" />
+    </a>
+
+    <!-- animate library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        delay: 150,
+        easing: "ease-in-out", // smooth curve
+        offset: 120, // scroll trigger
+        once: true,
+      });
+    </script>
+    <script src="./scripts/animationScripts.js"></script>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
+
