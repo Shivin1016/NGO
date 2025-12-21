@@ -54,19 +54,18 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-#team,
+} 
 #hero {
   margin: 20px 0;
 }
 #team {
-  min-height: 80vh;
+  min-height: 60vh;
 }
 #team .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 7rem auto;
+  margin: 3rem auto;
 }
 #programs {
   min-height: auto;
